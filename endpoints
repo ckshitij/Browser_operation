@@ -1,0 +1,8 @@
+http://127.0.0.1:6123/start?browser=chrome&url=www.google.com
+http://127.0.0.1:6123/start?browser=firefox&url=www.google.com
+
+http://127.0.0.1:6123/stop?browser=chrome
+http://127.0.0.1:6123/stop?browser=firefox
+
+http://127.0.0.1:6123/cleanup?browser=firefox
+http://127.0.0.1:6123/cleanup?browser=chrome
