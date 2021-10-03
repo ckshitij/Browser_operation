@@ -3,7 +3,8 @@
 import socket                 
 import queue
 from flask import Flask, request
-import os, sys, time 
+import os, sys, time
+
 
 app = Flask(__name__)
 
@@ -87,20 +88,7 @@ def connect():
     return 'Connection establised', 200
 
 @app.route("/log")
-def log():
-    conn, addr = s.accept()     # Establish connection with client.
-    client_list.append(conn)
-    print ('Got connection from', addr)
-    filename = 'dummy_server_log.txt'
-    lines = last10Lines(filename)
-    for line in lines:
-       client_list[0].send(line.encode())
 
-    print('Done sending')
-
-    t = FileWatcher(filename)
-    t.register_callback(print_line)
-    t.watch(s=3)
 
 
 
