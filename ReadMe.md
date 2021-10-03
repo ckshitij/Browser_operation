@@ -1,6 +1,6 @@
 ## Enpoints for Code to manipulate Browerser
 
-###Below are the 3 Enpoints all are (GET calls)
+### Below are the 3 Enpoints all are (GET calls) and implemetaion in browserStack.py
 
 - Start Browser and open the passed URL
     - http://127.0.0.1:6123/start?browser=chrome&url=www.google.com
